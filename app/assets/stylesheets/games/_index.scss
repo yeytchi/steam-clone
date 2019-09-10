@@ -1,0 +1,47 @@
+.index-wrapper {
+  background: url("https://store.steampowered.com/public/images/v6/colored_body_top2.png") center top no-repeat #1b2838;
+
+
+  .index-banner {
+    height: 450px;
+    background-image: url("https://steamcdn-a.akamaihd.net/steam/clusters/frontpage/f75e7e983523baa691271e36/page_bg_french.jpg?t=1568067960"), linear-gradient(to right, rgb(206, 216, 228) 50%, rgb(206, 216, 228) 50%);
+    background-position: center 0vw;
+    background-size: cover;
+    margin-bottom: 50px;
+
+    .banner-navbar {
+      width: 80%;
+      height: 40px;
+      position: relative;
+      top: 40px;
+      left: 10%;
+      background-color: rgba( 62, 126, 167, 0.8);
+      padding: 5px 15px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      .nav-item {
+        margin: 10px;
+      }
+
+      a {
+        color: #c6d4df;
+        font-size: 14px;
+      }
+    }
+  }
+
+  h2 {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .carousel {
+    width: 80%;
+    height: 400px;
+    overflow: hidden;
+    margin: 0 50px;
+  }
+
+}

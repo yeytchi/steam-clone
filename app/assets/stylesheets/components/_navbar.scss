@@ -1,12 +1,28 @@
-.navbar-lewagon {
+.navbar-steam {
+  background-color: #171a21;
+  height: 100px;
+  display: flex;
+  align-items: center;
   justify-content: space-between;
-  background: white;
+
+  a, h1 {
+    font-size: 14px;
+    color: #c6d4df;
+    &:hover {
+      color: white;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+
+  .navbar-brand img {
+    width: 176px;
+    height: 44px;
+  }
+
 }
 
-.navbar-lewagon .navbar-collapse {
+.navbar-steam .navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
-}
