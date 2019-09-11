@@ -66,11 +66,11 @@
       <% @games.first(5).each_with_index do |game, index| %>
         <% if index == 0 %>
           <div class="carousel-item active">
-            <img class="d-block w-100" src=<%= game.image_url %> alt="First slide">
+            <img class="d-block" src=<%= game.image_url %> alt="First slide">
           </div>
         <% else %>
           <div class="carousel-item">
-            <img class="d-block w-100" src=<%= game.image_url %> alt="Second slide">
+            <img class="d-block h-100" src=<%= game.image_url %> alt="Second slide">
           </div>
         <% end %>
       <% end %>
@@ -85,12 +85,41 @@
     </a>
   </div>
 
-  <div>
-    hello
+  <h2>OFFRES SPECIALES</h2>
+  <div class="special-offers">
+    <% @games.last(4).each do |game| %>
+      <div class="special-offer-game">
+        <img src=<%= game.icon_url %>>
+        <%= game.name %>
+      </div>
+    <% end %>
   </div>
 
-  <h2></h2>
+  <h2>PARCOURIR STEAM</h2>
+  <div class="buttons">
+    <a href="#" class="big-button">
+      Nouveautés
+    </a>
+    <a href="#" class="big-button">
+      Offres
+    </a>
+    <a href="#" class="big-button">
+      Offres
+    </a>
+    <a href="#" class="big-button">
+      Par tag des utilisateurs
+    </a>
+  </div>
 
+  <div class="footer">
+    <div class="footer-title">
+      <span>Vous cherchez des recommandations ?</span>
+    </div>
+    <p>Connectez-vous pour voir les recommandations personnalisées</p>
 
-
+    <a class="footer-button btn_border_2px btn_medium" href="https://store.steampowered.com/login/?snr=1_4_4__more-content-login">
+      <span>Connexion</span>
+    </a>
+    <p>Ou inscrivez-vous et rejoignez <strong>Steam</strong> gratuitement</p>
+  </div>
 </div>

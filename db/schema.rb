@@ -19,8 +19,10 @@ ActiveRecord::Schema.define(version: 2019_09_10_074011) do
     t.string "name"
     t.integer "price"
     t.string "video_url"
+    t.string "icon_url"
     t.string "image_url"
     t.string "release_date"
+    t.integer "release_year"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

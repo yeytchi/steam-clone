@@ -33,8 +33,10 @@ best_games.last(40).each do |game|
   # new_game['results'][0][]
   Game.create!(
     name: game,
-    image_url: new_game['results'][0]['image']['icon_url'],
-    release_date: "#{new_game['results'][0]['expected_release_day']}/#{new_game['results'][0]['expected_release_month']}/#{new_game['results'][0]['expected_release_year']}"
+    image_url: new_game['results'][0]['image']['super_url'],
+    icon_url: new_game['results'][0]['image']['icon_url'],
+    release_date: "#{new_game['results'][0]['expected_release_day']}/#{new_game['results'][0]['expected_release_month']}/#{new_game['results'][0]['expected_release_year']}",
+    release_year: new_game['results'][0]['expected_release_year']
   )
 end
 
