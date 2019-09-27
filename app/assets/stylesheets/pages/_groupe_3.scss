@@ -1,0 +1,62 @@
+.grp-3-images-wrapper {
+    position: relative;
+    margin: 50px 50px;
+    overflow: hidden;
+
+    .grp-3-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 50%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h4 {
+            opacity: 0;
+            transition: opacity 2s;
+            font-size: 40px;
+            color: white;
+            font-weight: 700;
+        }
+
+        h5 {
+            opacity: 0;
+            transition: opacity 2s;
+            font-size: 30px;
+            color: white;
+            font-weight: 500;
+        }
+
+    }
+    // #image-1 {
+    //     background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.8)), url("https://o.aolcdn.com/images/dims?quality=85&image_uri=https%3A%2F%2Fo.aolcdn.com%2Fimages%2Fdims%3Fresize%3D2000%252C2000%252Cshrink%26image_uri%3Dhttps%253A%252F%252Fs.yimg.com%252Fos%252Fcreatr-uploaded-images%252F2018-12%252Fcb7c41a0-f7cb-11e8-b3ff-4bc6a0e52d77%26client%3Da1acac3e1b3290917d92%26signature%3D76300401c5cb3cf3d626b9729722fd2406d5ec60&client=amp-blogside-v2&signature=44d3cb3fc02f657f6ff83d225400358e15ff5aaa");
+    // }
+
+    // #image-2 {
+    //     background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.8)), url("https://images.spot.im/v1/production/ruedveklqia51z6jxkk0");
+    // }
+
+    // #image-3 {
+    //     background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.8)), url("https://steamcdn-a.akamaihd.net/steam/apps/359550/capsule_616x353.jpg?t=1568227548");
+    // }
+
+    // #image-4 {
+    //     background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.8)), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREE_Jnh0WuFtL5ddn7CPzj-zxxN2PzNT2BZ4OnnYTV3BBGicgt");
+    // }
+    
+    .inner-images {
+        border: 3px solid red;
+        display: flex;
+        .grp-3-image {
+            height: 500px;
+            width: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+    
+}

@@ -1,0 +1,33 @@
+.grp-6-main-container {
+    overflow: hidden;
+
+    .grp-6-container {
+        display: table;
+        height: 200px;
+
+        .buttons {
+            opacity: 0.6;
+            z-index: 1;
+            height: 200px;
+            width: 100vw;
+            position: absolute;
+            left: 0;
+            display: flex;
+            justify-content: space-between;
+
+            #left-scroll {}
+        }
+
+        .grp-6-caroussel {
+            position: absolute;
+            left: 0;
+            transition: transform 1s;
+            transform: translateX(0px);
+            display: flex;
+            img {
+                width: 300px;
+                margin: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.grp-2-img {
+    width: 100px;
+    position: relative;
+    transition: all 1s;
+}
+
+.appear {
+    transform: translateY(-30%);
+}
+
+.grp-2-image-container {
+    overflow: hidden;
+    height: 500px;
+    img {
+        width: 100%;
+    }
+}

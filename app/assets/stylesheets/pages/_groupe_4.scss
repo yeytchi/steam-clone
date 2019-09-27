@@ -1,0 +1,42 @@
+#groupe-4 {
+    .elements-container {
+        margin: 200px 0px;
+        width: 100vw;
+        height: 300px;
+        
+        .item { 
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            border: solid 1px blue;
+        }
+
+        .align-left {
+            float: left;
+            margin-right: 20px;
+        }
+      
+        .align-right {
+            float: right;
+            margin-left: 20px;
+        }
+      
+        .slide-in {
+            opacity: 0;
+            transition: all .7s;
+        }
+      
+        .align-left.slide-in {
+            transform: translateX(-30%) translateY(30%) scale(0.95);
+        }
+      
+        .align-right.slide-in {
+            transform: translateX(30%) translateY(30%) scale(0.95);
+        }
+      
+        .slide-in.active {
+            opacity: 1;
+            transform: translateX(0%) scale(1);
+        }
+    }
+}
